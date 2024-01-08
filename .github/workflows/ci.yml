@@ -52,8 +52,9 @@ jobs:
     - name: 'Install Dependencies'
       run: npm install
 
-    - name: 'Run Linter'
-      run: npx standard -v 
+    - name: Super-Linter
+      uses: super-linter/super-linter@v5.7.2
+            
 
   # ======================================================
   # Deploy the main branch to staging
